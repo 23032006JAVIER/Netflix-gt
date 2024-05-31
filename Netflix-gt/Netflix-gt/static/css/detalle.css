@@ -1,0 +1,307 @@
+
+@font-face {
+  font-family: "Netflix";
+  src: url(/font/AvenirNextLTPro-Regular.otf);
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Bold";
+  src: url(/font/AvenirNextLTPro-Bold.otf);
+  font-weight: 400;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+  }
+  .featured {
+    position: relative;
+    left: 10%;
+    min-height: 400px;
+    
+  }
+    
+  .button-container {
+    width: 100%;
+    padding: 0 20px;
+  }
+  .btnr {
+    width: 100%;
+    font-size: 18px;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+    background-image: url("/Netnet-base/icons/play.svg"); 
+    background-repeat: no-repeat;
+
+}
+
+.btnr {
+    background-color: #e0e0e0;
+    border-color: #bbb;
+}
+
+.btnr:hover{
+  transform: translateY(-3px);
+}
+.desc img{
+  position: absolute;
+  left: 10px; 
+}
+
+
+  .desc {
+    width: 100%;
+    padding: 15;
+    font-size: 18px;
+    color: #000;
+    background-color: #fff;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    background-image: url("/Netnet-base/icons/download.svg"); 
+    background-repeat: no-repeat; 
+
+  }
+  .desc {
+    background-color: gray;
+    border-color: gray;
+  }
+
+.gray-text {
+    color: rgb(163, 159, 159); 
+}
+
+.small-text {
+    font-size: 14px; 
+}
+
+.bt {
+  display: flex;
+  justify-content: flex-start; 
+}
+
+.bt button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  margin-right: 10px; 
+  background-color: black; 
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.bt button img {
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+
+}
+
+.bt button span {
+  color: white; 
+}
+.back-button {
+  position: fixed; 
+  top: 20px;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 45px; 
+  height: 30px; 
+  background-color: transparent; 
+  cursor: pointer;
+  transition: background-color 0.3s;
+  z-index: 2; 
+  background: transparent;
+  border-radius: 10%;
+}
+
+.back-button img {
+  width: 24px;
+  height: 24px;
+  filter: invert(1); 
+}
+
+.back-button:hover{
+  background: red;
+}
+
+
+.list-content {
+  display: flex;
+  white-space: nowrap;
+  overflow: auto;
+  scroll-snap-stop: always;
+  scrollbar-color: goldenrod transparent;
+  max-width: 100%;
+
+}
+
+.list-item {
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.list-item:first-child {
+  margin: 0;
+}
+
+.list {
+  padding: 0 1em;
+}
+
+
+.featured video {
+  margin-left: -10%;
+  height: 100;
+  width: 100%;
+}
+.valoracion {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.valoracion input {
+  position: absolute;
+  top: -100px;
+}
+
+
+.valoracion label {
+  float: right;
+  color: #c1b8b8;
+  font-size: 30px; 
+}
+
+.valoracion label:hover,
+.valoracion label:hover ~ label,
+.valoracion input:checked ~ label {
+  color: goldenrod;
+}
+
+.lista:hover{
+  background: rgb(43, 39, 39);
+  transform: translateY(-3px);
+}
+.com:hover{
+  background: rgb(43, 39, 39);
+  transform: translateY(-3px);
+}
+.Cal:hover{
+  background: rgb(43, 39, 39);
+  transform: translateY(-3px);
+}
+.footer {
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background:black;
+  padding: 1em 0 0;
+  
+}
+
+.tab-list {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-auto-flow: column;
+  list-style: none;
+  color: #6e6e6e;
+  padding-bottom: 1em 0 0;
+  
+}
+.tab-list a {
+  color: goldenrod;
+  text-decoration: none;
+}
+
+.tab-item {
+  text-align: center;
+  font-size: .9em;
+  text-decoration: none;
+}
+.tab-item:hover{
+  transform: translateY(-2px);
+  
+}
+
+.tab-item svg {
+  display: block;
+  margin: auto;
+}
+
+.tab-item path {
+  fill: white;
+}
+
+.tab-item :hover :is(path, span) {
+  transform: translateY(-3px);
+  color: goldenrod;
+}
+.btnr{
+  transform: translateY(-3px);
+}
+.list-item:hover{
+  transform: translateY(3px);
+  border: 2px solid goldenrod;
+}
+
+
+.btnr:hover{
+  transform: translateY(3px);
+}
+.desc:hover{
+  transform: translateY(-3px);
+}
+
+
+
+
+.list-title{
+  max-width: 30%;
+}
+
+.list-title:hover{
+  transform: translateY(-1px);
+}
+
+.ver-count {
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  z-index: 3;
+  border: 2px solid transparent;
+  text-decoration: none;
+  font-family: Netflix;
+}
+
+.ver-count:hover {
+  background-color: #f016af;
+  color: #000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.ver-count:active {
+  transform: scale(0.9);
+}
+
